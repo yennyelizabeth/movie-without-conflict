@@ -2,10 +2,11 @@ HACKATON: "Movies"
 ==================
 ## SQUAD:
 
+
 ## INTEGRANTES:  
 -                  , Andrea - andrea_206_93@hotmail.com
 - Quiñones Jauregui, Yenny Elizabeth - yenny.quinones.jauregui@gmail.com
--                  , Valeria - sindryv@gmail.com
+- Valles , Valeria - sindryv@gmail.com
 - Yauri Machaca , Melissa Rossmery - yaurimelissa@gmail.com
 
 ## PROBLEMA
