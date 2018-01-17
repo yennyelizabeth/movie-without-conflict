@@ -2,10 +2,11 @@ HACKATON: "Movies"
 ==================
 ## SQUAD:
 
+
 ## INTEGRANTES:  
--                  , Andrea - andrea_206_93@hotmail.com
+- Encarnación Gomez, Andrea - andrea_206_93@hotmail.com
 - Quiñones Jauregui, Yenny Elizabeth - yenny.quinones.jauregui@gmail.com
--                  , Valeria - sindryv@gmail.com
+- Valles , Valeria - sindryv@gmail.com
 - Yauri Machaca , Melissa Rossmery - yaurimelissa@gmail.com
 
 ## PROBLEMA
@@ -42,8 +43,20 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
 - Vs-MWC-01 Actual versión.
 
 ## ANEXOS
-- Modelo Cuestionario de Entrevista Online 
+- Modelo Cuestionario de Entrevista Online
   ![Preguntas](assets/images/readme/grupo-question-1.png)
   ![Respuestas](assets/images/readme/grupo-respuestas-1.png)
 
 Andrea encarnacion
+
+## PROTOTIPOS
+### SKETCH
+#### Sketch de Valeria
+ ![Valeria](assets/images/readme/PROTOTIPOS/Sketch-Valeria.png)
+#### Sketch de Yenny
+ ![Yenny](assets/images/readme/PROTOTIPOS/Sketch-Yenny.png)
+#### Sketch de Melissa
+ ![Melissa](assets/images/readme/PROTOTIPOS/Sketch-Melissa.png)
+#### Sketch de Andrea : Prototipo Final
+ ![Andrea](assets/images/readme/PROTOTIPOS/prototipo-final-desktop.png)
+ ![Andrea](assets/images/readme/PROTOTIPOS/prototipo-final-mobile.png)
