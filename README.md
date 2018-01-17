@@ -44,19 +44,19 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
 
 ## ANEXOS
 - Modelo Cuestionario de Entrevista Online
-  ![Preguntas](assets/images/readme/grupo-question-1.png)
-  ![Respuestas](assets/images/readme/grupo-respuestas-1.png)
+  ![Preguntas](assets/images/grupo-question-1.png)
+  ![Respuestas](assets/images/grupo-respuestas-1.png)
 
 Andrea encarnacion
 
 ## PROTOTIPOS
 ### SKETCH
 #### Sketch de Valeria
- ![Valeria](assets/images/readme/PROTOTIPOS/Sketch-Valeria.png)
+ ![Valeria](assets/images/PROTOTIPOS/Sketch-Valeria.png)
 #### Sketch de Yenny
- ![Yenny](assets/images/readme/PROTOTIPOS/Sketch-Yenny.png)
+ ![Yenny](assets/images/PROTOTIPOS/Sketch-Yenny.png)
 #### Sketch de Melissa
- ![Melissa](assets/images/readme/PROTOTIPOS/Sketch-Melissa.png)
+ ![Melissa](assets/images/PROTOTIPOS/Sketch-Melissa.png)
 #### Sketch de Andrea : Prototipo Final
- ![Andrea](assets/images/readme/PROTOTIPOS/prototipo-final-desktop.png)
- ![Andrea](assets/images/readme/PROTOTIPOS/prototipo-final-mobile.png)
+ ![Andrea](assets/images/PROTOTIPOS/prototipo-final-desktop.png)
+ ![Andrea](assets/images/PROTOTIPOS/prototipo-final-mobile.png)
