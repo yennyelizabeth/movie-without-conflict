@@ -46,3 +46,4 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
   ![Preguntas](assets/images/readme/grupo-question-1.png)
   ![Respuestas](assets/images/readme/grupo-respuestas-1.png)
 
+Andrea encarnacion
