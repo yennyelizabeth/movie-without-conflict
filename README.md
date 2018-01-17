@@ -42,8 +42,10 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
 - Vs-MWC-01 Actual versión.
 
 ## ANEXOS
-- Modelo Cuestionario de Entrevista Online 
+- Modelo Cuestionario de Entrevista Online
   ![Preguntas](assets/images/readme/grupo-question-1.png)
   ![Respuestas](assets/images/readme/grupo-respuestas-1.png)
 
 Andrea encarnacion
+
+## Imagenes
