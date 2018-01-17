@@ -49,4 +49,14 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
 
 Andrea encarnacion
 
-## Imagenes
+## PROTOTIPOS
+### SKETCH
+#### Sketch de Valeria
+ ![Valeria](assets/images/readme/PROTOTIPOS/Sketch-Valeria.png)
+#### Sketch de Yenny
+ ![Yenny](assets/images/readme/PROTOTIPOS/Sketch-Yenny.png)
+#### Sketch de Melissa
+ ![Melissa](assets/images/readme/PROTOTIPOS/Sketch-Melissa.png)
+#### Sketch de Andrea : Prototipo Final
+ ![Andrea](assets/images/readme/PROTOTIPOS/prototipo-final-desktop.png)
+ ![Andrea](assets/images/readme/PROTOTIPOS/prototipo-final-mobile.png)
