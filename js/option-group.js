@@ -26,40 +26,74 @@ $(document).ready(function() {
     flag = 1;
     alert(flag);
     total=$.merge(total,musical);
-    alert(total);
   })
   
   $('#fantasy').click(function(){
      flag = 2;
      alert(flag);
-     total=$.merge(total,fantasy);
-     alert(total);
+     total=$.merge(total,fantasy);   
   })
   
   $('#ficcion').click(function(){
     flag = 3 ;
-    total=$.merge(total,ficcion);
-    alert(total);  
+    total=$.merge(total,ficcion);  
     })
   
   $('#accion').click(function(){
     flag = 4 ;
-    total=$.merge(total,accion);
-    alert(total);  
+    total=$.merge(total,accion); 
   })
   
   $('#animada').click(function(){
     flag = 5 ;
-    total=$.merge(total,accion);
-    alert(total);  
+    total=$.merge(total,accion);  
   })
   
   $('#aventura').click(function(){
     flag = 6 ;
+    total=$.merge(total,aventura); 
+  })
+
+  $('#cienciaficcion').click(function(){
+    flag = 7 ;
     total=$.merge(total,aventura);
-    alert(total);  
   })
   
+  $('#comedia').click(function(){
+    flag = 8 ;
+    total=$.merge(total,aventura);
+  })
+ 
+  $('#drama').click(function(){
+    flag = 9 ;
+    total=$.merge(total,aventura);
+  })
+
+  $('#erotico').click(function(){
+    flag = 10 ;
+    total=$.merge(total,aventura);
+  })
+
+  $('#romantica').click(function(){
+    flag = 11 ;
+    total=$.merge(total,aventura);
+  })
+  
+  $('#suspenso').click(function(){
+    flag = 12 ;
+    total=$.merge(total,aventura);
+  })
+
+  $('#suspenso').click(function(){
+    flag = 13 ;
+    total=$.merge(total,aventura);
+  })
+  
+  $('#terror').click(function(){
+    flag = 14 ;
+    total=$.merge(total,aventura);
+  })
+
 
   /* funcion para llamar el api*/
   function apiCall(){
