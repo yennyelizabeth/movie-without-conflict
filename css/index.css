@@ -1,20 +1,39 @@
-.view-desktop{
-
-}
-
-.view-mobile {
-  
-}
-/* para vista desktop */
-@media screen and (min-width:991px){
-  /* section-option */  
-    .view-desktop{
-      display: none;
-    }
 
 /* para vista mobile */
-@media screen and (min-width:991px){
+
+@media (max-width:300px){
   /* section-option */  
-    .view-mobile{
-      display: none;
-    }
+
+  img{
+    margin-top: 200px important! ;
+  }
+
+
+  .view-desktop{
+    display: none;
+  }
+
+  .letter-mobile {
+    font-size: 1em;
+    
+  }
+
+  }
+
+/* para vista desktop */
+@media (min-width:991px){
+  /* section-option */  
+
+  .view-desktop{
+    padding-left: 178px;
+  }
+
+  .view-mobile{
+    display: none;
+  }
+
+  .letter-desktop {
+    font-size: 3em;
+  }
+  
+ }
