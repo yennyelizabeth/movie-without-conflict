@@ -5,15 +5,15 @@
 	padding: 0;
 	font-family: 'Oswald', sans-serif;
 	color: white;
-	background-color: rgb(15, 15, 15);
+}
+
+body{
+	background-color: black;
 }
 
 img{
 	max-width: 100%;
 }
-
-
-/* Clases Reutilizables */
 
 navbar, .navbar-inverse{
 	margin: 0;
@@ -26,7 +26,6 @@ navbar, .navbar-inverse{
 	height: 100%;
 }
 
-
 section{
 	text-align: center;
 }
@@ -35,10 +34,73 @@ h1{
 	font-size: 4em;	
 }
 
+.btn-1{
+	background: rgba(71,18,63,1);
+	background: -moz-linear-gradient(-45deg, rgba(71,18,63,1) 0%, rgba(197,31,72,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(71,18,63,1)), color-stop(100%, rgba(197,31,72,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(71,18,63,1) 0%, rgba(197,31,72,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(71,18,63,1) 0%, rgba(197,31,72,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(71,18,63,1) 0%, rgba(197,31,72,1) 100%);
+	background: linear-gradient(135deg, rgba(71,18,63,1) 0%, rgba(197,31,72,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47123f', endColorstr='#c51f48', GradientType=1 );
+}
+
+/*estilos a grupo*/
+
+.selectpicker{
+	background-color: white;
+	color: black;
+	height: 2em;
+	border-radius: 5px;
+}
+
+.selectpicker option{
+	color: black;
+}
+
 .think{
 	width: 35px;
 }
 
+#carousel-example-generic img{
+	min-width: 100%;
+}
 
+.carousel-temp{
+	margin-top: 20px;
+}
 
+/*estilos a alone*/
+
+.smile{
+	height: 1em;
+}
+
+.select-gender{
+	border: 2px solid #c51f48;
+}
+
+.input-name{
+	margin-top: 18px;
+}
+
+.select-gender{
+	padding-bottom: 15px;
+}
+
+.btn-pelis{
+	margin-top: 18px;
+}
+/*estilos a ayuda*/
+
+.help h1{
+	font-size: 3em;
+}
+
+/*media querys*/
+@media(min-width: 768px){
+	.movie-group h1{
+		font-size: 3em;
+	}
+}
 
