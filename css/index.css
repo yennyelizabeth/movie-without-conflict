@@ -1,0 +1,39 @@
+
+/* para vista mobile */
+
+@media (max-width:300px){
+  /* section-option */  
+
+  img{
+    margin-top: 200px important! ;
+  }
+
+
+  .view-desktop{
+    display: none;
+  }
+
+  .letter-mobile {
+    font-size: 1em;
+    
+  }
+
+  }
+
+/* para vista desktop */
+@media (min-width:991px){
+  /* section-option */  
+
+  .view-desktop{
+    padding-left: 178px;
+  }
+
+  .view-mobile{
+    display: none;
+  }
+
+  .letter-desktop {
+    font-size: 3em;
+  }
+  
+ }
