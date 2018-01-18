@@ -55,14 +55,15 @@
         <div class="col-xs-12 col-sm-4">
           <img src="../assets/images/MEANS-08.png" alt="friends">
         </div>
+        <!-- aqui el selector -->
         <div class="col-xs-12 col-sm-3">
           <h3>Cuantos somos? <img src="../assets/images/27.png" alt="pensativo" class="think"></h3>
-          <select title="persons" class="selectpicker col-xs-8 col-xs-offset-2">
-            <option value="default">Selecciona</option>
-            <option value="person2">2 Personas</option>
-            <option value="person3">3 Personas</option>
-            <option value="person4">4 Personas</option>
-            <option value="person5">5 Personas</option>
+          <select title="persons" class="selectpicker col-xs-8 col-xs-offset-2" id="person-number">
+            <option value="1">Selecciona</option>
+            <option value="2" class="hello">2 Personas</option>
+            <option value="3" class="hello">3 Personas</option>
+            <option value="4" class="hello">4 Personas</option>
+            <option value="5" class="hello">5 Personas</option>
           </select>
         </div>
       </div>
@@ -77,6 +78,7 @@
       </div>
     </div>
   </section>
+  <!-- carrousel temporal -->
   <section class="carousel-temp">
     <div class="container">
       <div class="row">
@@ -113,6 +115,15 @@
             <span class="sr-only">Next</span>
           </a>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- seccion de iconos para elegir -->
+    <section class="friends-icons">
+      <div class="container">
+        <div class="row" id="choose-gender">
+          <!-- aca se deben acumular los cuadros dependiendo del select -->
+          
         </div>
       </div>
     </section>
