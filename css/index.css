@@ -1,55 +1,39 @@
-/* Nuevas Clases */
-* {
-	box-sizing: border-box;
-	font-family: 'Raleway', sans-serif !important;
-  }
-  
-  body {
-	font-size: 16px;
-	color: rgb(182, 54, 54);
-	background-color: hsla(30, 1%, 68%, 0.308);
-  }
-  
-  li {
-	list-style: none;
-  }
-  
-  .letter-white {
-   color: white;
-  }
-  
-  img {
-	margin-left: 4em;  
-	width: 18em;
-	height: 16em;
-  }
-  
-  .input-group {
-	display: inline-block;
-  }
-  
- 
-.container-flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2em;
-  height: 100vh;
-}
-  
-.vh100 {
-  height: 100vh;
-}
 
-.two-fields {
-width:100%;
-}
+/* para vista mobile */
 
-.two-fields .input-group {
-width:100%;
-}
+@media (max-width:300px){
+  /* section-option */  
+
+  img{
+    margin-top: 200px important! ;
+  }
+
+
+  .view-desktop{
+    display: none;
+  }
+
+  .letter-mobile {
+    font-size: 1em;
+    
+  }
+
+  }
+
+/* para vista desktop */
+@media (min-width:991px){
+  /* section-option */  
+
+  .view-desktop{
+    padding-left: 178px;
+  }
+
+  .view-mobile{
+    display: none;
+  }
+
+  .letter-desktop {
+    font-size: 3em;
+  }
   
-.icon-user {
-width: 2em !important;
-height: 2em;
-}
+ }
