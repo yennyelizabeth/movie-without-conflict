@@ -70,6 +70,10 @@ h1{
 	margin-top: 20px;
 }
 
+#choose-gender{
+	margin-top: 2%;
+}
+
 /*estilos a alone*/
 
 .smile{
@@ -78,6 +82,10 @@ h1{
 
 .select-gender{
 	border: 2px solid #c51f48;
+	overflow: hidden;
+	width: 80%;
+	margin: 1.5%;
+	display: inline-block;
 }
 
 .input-name{
@@ -101,6 +109,13 @@ h1{
 @media(min-width: 768px){
 	.movie-group h1{
 		font-size: 3em;
+	}
+	.select-gender{
+		border: 2px solid #c51f48;
+		overflow: hidden;
+		width: 32%;
+		margin: 0.5%;
+		display: inline-block;
 	}
 }
 
