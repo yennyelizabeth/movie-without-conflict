@@ -85,82 +85,79 @@ $(document).ready(function() {
   var total = [];
   var flag = 0;
 
-
-  $('#musical').click(function() {
-
+  $('.musical').click(function() {	
     flag = 1;
     alert(flag);
     total = $.merge(total, musical);
-    alert(total);
+    });
+  
+  $('.fantasy').click(function() {
 
-  });
-
-  $('#fantasy').click(function() {
     flag = 2;
     alert(flag);
     total = $.merge(total, fantasy);
-    alert(total);
   });
-
-  $('#ficcion').click(function() {
+  $('.ficcion').click(function() {
     flag = 3 ;
     total = $.merge(total, ficcion);
   });
+  
+  $('.accion').click(function() {
 
-  $('#accion').click(function() {
     flag = 4 ;
     total = $.merge(total, accion);
   });
 
-  $('#animada').click(function() {
+  $('.animada').click(function() {
     flag = 5 ;
-    total = $.merge(total, accion);
+    total = $.merge(total, animada);  
   });
-
-  $('#aventura').click(function() {
+  
+  $('.aventura').click(function() {
 
     flag = 6 ;
     total = $.merge(total, aventura);
   });
 
-  $('#cienciaficcion').click(function() {
+  $('.cienciaficcion').click(function() {
     flag = 7 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, cienciaficcion);
   });
 
-  $('#comedia').click(function() {
+  
+  $('.comedia').click(function() {
+
     flag = 8 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, comedia);
   });
-
-  $('#drama').click(function() {
+  
+  $('.drama').click(function() {
     flag = 9 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, drama);
   });
 
-  $('#erotico').click(function() {
+  $('.erotico').click(function() {
     flag = 10 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, erotico);
   });
 
-  $('#romantica').click(function() {
+  $('.romantica').click(function() {
     flag = 11 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, romantica);
   });
 
-  $('#suspenso').click(function() {
+  $('.suspenso').click(function() {
     flag = 12 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, suspenso);
   });
 
-  $('#suspenso').click(function() {
-    flag = 13 ;
-    total = $.merge(total, aventura);
-  });
-
-  $('#terror').click(function() {
+  $('.terror').click(function() {
     flag = 14 ;
     total = $.merge(total, aventura);
+  });
+
+  $('#match').click(function() {
+alert( total);
   });
 
 
