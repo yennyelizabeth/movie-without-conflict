@@ -64,18 +64,18 @@ $(document).ready(function() {
   });
   // melissa y yenny
   /* Arreglos con Preferencias existentes en la API*/
-  var musical = ['Cannibal! The Musical', 'Lovestruck: The Musical', 'College Musical', 'Cats'];
-  var fantasy = ['Lovestruck: The Musical', 'Shrek the Musical'];
-  var accion = ['Star Wars', 'Wonder Woman', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Pirates of the Caribbean', 'Shaolin Soccer', 'Airbag'];
-  var animada = ['Up', 'Moana'];
-  var aventura = ['Star Wars', 'Up', 'Moana', 'Pirates of the Caribbean', 'Back to the Future', 'Wonder Woman'];
-  var cienciaficcion = ['The Adjustment Bureau', 'Back to the Future'];
-  var comedia = ['Up', 'Moana', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Shaolin Soccer', 'Airbag', 'Back to the Future'];
-  var drama = ['Night and Day'];
-  var erotico = ['Fifty Shades Darker'];
-  var romantica = ['Possession ', ' Date Movie, Love Actually', 'Sun, Sand & Romance', 'Modern Romance'];
-  var suspenso = ['The Sixth Sense ', ' Vertigo', 'Psycho', 'Hitchcock', 'Memento'];
-  var terror = ['Raising Cain', ' American Nightmare', 'The grudge', 'Grave Halloween', 'The others'];
+  var musical = ['Cabaret', 'Grease', 'Night and Day', 'Lovestruck: The Musical', 'Shrek the Musical', 'High School Musical'];
+  var fantasy = ['Justice League', 'Shrek the Musical', 'Lovestruck: The Musical', 'Harry Potter', 'Star Wars', 'Click', 'Ted', 'Pirates of the Caribbean', 'Wonder Woman'];
+  var accion = ['Kung Fu Panda', 'The Avengers', 'Rise of the Planet of the Apes', 'True Lies', 'Kill Bill', 'Justice League', 'Star Wars', 'Avatar', 'Wonder Woman', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Pirates of the Caribbean', 'Superman', 'Shaolin Soccer', 'Airbag'];
+  var animada = ['Shrek', 'Kung Fu Panda', 'The Avengers', 'Ratatouille', 'Up', 'Moana', 'Galaxy Buck', 'Coco'];
+  var aventura = ['Shrek', 'Kung Fu Panda', 'The Avengers', 'Justice League', 'Harry Potter', 'Star Wars', 'Coco', 'Up', 'Avatar', 'Moana', 'Pirates of the Caribbean', 'Back to the Future', 'Wonder Woman', 'Superman'];
+  var cienciaficcion = ['The Prestige', 'Rise of the Planet of the Apes', 'I Am Legend', 'The Adjustment Bureau', 'Primer', 'Gattaca', 'Back to the Future', 'Alien', 'Galaxy Buck'];
+  var comedia = ['Shrek', 'True Lies', 'High School Musical', 'Shrek the Musical', 'Lovestruck: The Musical', 'Ratatouille', 'Modern Romance', 'Up', 'Sun, Sand & Romance', 'Love Actually', 'Date Movie', 'Ted', 'Coco', 'Moana', 'Perfectos desconocidos', 'Mamá se fue de viaje', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Shaolin Soccer', 'Airbag', 'Back to the Future', 'Kristove roky'];
+  var drama = ['Fifty Shades of Grey', 'Cabaret', 'Obsessed', 'The Prestige', 'Black Swan', 'Behind the Walls', 'Rise of the Planet of the Apes', 'High School Musical', 'The Other', 'Raising Cain', 'Harry Potter', 'I Am Legend', 'The Sixth Sense', 'Love Actually', 'Night and Day', 'Possession', 'Click', 'Primer', 'Avatar', 'Amour', 'Titanic', 'Gattaca', 'Kristove roky', 'I Am Sam', 'Superman'];
+  var erotico = ['Fifty Shades of Grey'];
+  var romantica = ['Fifty Shades of Grey', 'Grease', 'Obsessed', 'Vertigo', 'Modern Romance', 'Scott Pilgrim vs. the World', 'The Adjustment Bureau', 'Titanic', 'Date Movie', 'Love Actually', 'Sun, Sand & Romance'];
+  var suspenso = ['Obsessed', 'The Prestige', 'Black Swan', 'Behind the Walls', 'The Other', 'The Grudge', 'The Sixth Sense', 'Vertigo', 'Psycho', 'Memento'];
+  var terror = ['Behind the Walls', 'True Lies', 'Kill Bill', 'The Other', 'The Grudge', 'American Nightmare', 'Raising Cain', 'Gattaca', 'Primer', 'Alien', 'Possession', 'The Sixth Sense', 'Vertigo', 'Psycho', 'Memento', 'I Am Legend'];
 
   /* eventos para cada tipo de genero de la pelicula*/
   /* array segun los generos de peliculas*/
@@ -189,7 +189,7 @@ $(document).ready(function() {
     }
     // elimina del array los vacios o ceros y se guarda en myArrClean
     myArrClean = coincidencia.filter(Boolean);
-    alert(coincidencia);
+    console.log(coincidencia);
   });
 
 
@@ -224,5 +224,18 @@ $(document).ready(function() {
   $('#match').click(function() {
     apiCall();
     $('#imagen').removeClass('hide');
+  });
+
+  /* validando los inputs para que no ingrese numero*/
+  $('#first-person, #second-person').keyup(function() {
+    /* obteniendo el valor*/
+    var $inputName = $(this).val();
+    /* expresion para numeros*/
+    var $expresion1 = /[1-9]/;
+    /*  se valida para que solo se ingrese letras y no numeros*/
+    if ($inputName.match($expresion1)) {
+      alert('Solo se ingresa letras');
+      $(this).val('');
+    }
   });
 });
