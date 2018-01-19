@@ -209,9 +209,17 @@ $(document).ready(function() {
     $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + randomMovie).then(function(response) {
       /* obteniendo el objeto*/
       console.log(response);
-      /* var typeMovie = response.Genre;
+      var title = response.Title;
+      var actors = response.Actors;
+      var typeMovie = response.Genre;
+      var awards = response.Awards;
+      var plot = response.Plot;
       console.log(typeMovie);
-      $('.genere').append(typeMovie);*/
+      $('#information').append('<div > Titulo: ' + title + ' </div>');
+      $('#information').append('<div > Actores: ' + actors + ' </div>');
+      $('#information').append('<div > Género: ' + typeMovie + ' </div>');
+      $('#information').append('<div > Premios: ' + awards + ' </div>');
+      $('#information').append('<div > Premios: ' + plot + ' </div>');
       var image = response.Poster;
       console.log(image);
       /* $('#cont').append('<div >' +image + ' </div>');*/
@@ -224,6 +232,7 @@ $(document).ready(function() {
   $('#match').click(function() {
     apiCall();
     $('#imagen').removeClass('hide');
+    $('#btn-modal').removeClass('hide');
   });
 
   /* validando los inputs para que no ingrese numero*/
