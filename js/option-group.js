@@ -64,7 +64,7 @@ $(document).ready(function() {
   });
   // melissa y yenny
   /* Arreglos con Preferencias existentes en la API*/
-  var musical = ['Cabaret', 'Grease', 'Night and Day', 'Lovestruck: The Musical', 'Shrek the Musical', 'High School Musical']; 
+  var musical = ['Cabaret', 'Grease', 'Night and Day', 'Lovestruck: The Musical', 'Shrek the Musical', 'High School Musical'];
   var fantasy = ['Justice League', 'Shrek the Musical', 'Lovestruck: The Musical', 'Harry Potter', 'Star Wars', 'Click', 'Ted', 'Pirates of the Caribbean', 'Wonder Woman'];
   var accion = ['Kung Fu Panda', 'The Avengers', 'Rise of the Planet of the Apes', 'True Lies', 'Kill Bill', 'Justice League', 'Star Wars', 'Avatar', 'Wonder Woman', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Pirates of the Caribbean', 'Superman', 'Shaolin Soccer', 'Airbag'];
   var animada = ['Shrek', 'Kung Fu Panda', 'The Avengers', 'Ratatouille', 'Up', 'Moana', 'Galaxy Buck', 'Coco'];
@@ -189,7 +189,7 @@ $(document).ready(function() {
     }
     // elimina del array los vacios o ceros y se guarda en myArrClean
     myArrClean = coincidencia.filter(Boolean);
-    alert(coincidencia);
+    console.log(coincidencia);
   });
 
 
@@ -224,5 +224,18 @@ $(document).ready(function() {
   $('#match').click(function() {
     apiCall();
     $('#imagen').removeClass('hide');
+  });
+
+  /* validando los inputs para que no ingrese numero*/
+  $('#first-person, #second-person').keyup(function() {
+    /* obteniendo el valor*/
+    var $inputName = $(this).val();
+    /* expresion para numeros*/
+    var $expresion1 = /[1-9]/;
+    /*  se valida para que solo se ingrese letras y no numeros*/
+    if ($inputName.match($expresion1)) {
+      alert('Solo se ingresa letras');
+      $(this).val('');
+    }
   });
 });
