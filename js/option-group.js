@@ -86,76 +86,75 @@ $(document).ready(function() {
   var flag = 0;
 
   
-  $('#musical').click(function() {	
+  $('.musical').click(function() {	
     flag = 1;
     alert(flag);
     total = $.merge(total, musical);
     });
   
-  $('#fantasy').click(function() {
+  $('.fantasy').click(function() {
     flag = 2;
     alert(flag);
     total = $.merge(total, fantasy);
   });
   
-  $('#ficcion').click(function() {
+  $('.ficcion').click(function() {
     flag = 3 ;
     total = $.merge(total, ficcion);  
   });
   
-  $('#accion').click(function() {
+  $('.accion').click(function() {
     flag = 4 ;
     total = $.merge(total, accion); 
   });
   
-  $('#animada').click(function() {
+  $('.animada').click(function() {
     flag = 5 ;
     total = $.merge(total, animada);  
   });
   
-  $('#aventura').click(function() {
-
+  $('.aventura').click(function() {
     flag = 6 ;
     total = $.merge(total, aventura); 
   });
 
-  $('#cienciaficcion').click(function() {
+  $('.cienciaficcion').click(function() {
     flag = 7 ;
     total = $.merge(total, cienciaficcion);
   });
   
-  $('#comedia').click(function() {
+  $('.comedia').click(function() {
     flag = 8 ;
     total = $.merge(total, comedia);
   });
  
-  $('#drama').click(function() {
+  $('.drama').click(function() {
     flag = 9 ;
     total = $.merge(total, drama);
   });
 
-  $('#erotico').click(function() {
+  $('.erotico').click(function() {
     flag = 10 ;
     total = $.merge(total, erotico);
   });
 
-  $('#romantica').click(function() {
+  $('.romantica').click(function() {
     flag = 11 ;
     total = $.merge(total, romantica);
   });
 
-  $('#suspenso').click(function() {
+  $('.suspenso').click(function() {
     flag = 12 ;
     total = $.merge(total, suspenso);
   });
 
-  $('#terror').click(function() {
+  $('.terror').click(function() {
     flag = 14 ;
     total = $.merge(total, aventura);
   });
 
   $('#match').click(function() {
-
+alert( total);
   });
 
 
