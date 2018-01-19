@@ -1,24 +1,26 @@
 /* Funcionalidad Vista Opción Ver Película en Grupo */
 $(document).ready(function() {
+
   // declara la variable que escribe el html
- var iconsChoose = '<div class="col-xs-12 col-sm-4 select-gender">' +  
+ var iconsChoose = '<div class="col-xs-12 col-sm-4 select-gender">' +
   '<div class="col-xs-10  input-name"><input type="text" placeholder="Escribe tu nombre" class="form-control"></div>' +
   '<h3 class="col-xs-12">¿Que Género prefieres?</h3>' +
   '<div class="icons-gender">' +
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-03.png" alt="accion"><p>Acción</p></div>' +      
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-01.png" alt="animado"><p>Animado</p></div>' + 
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-09.png" alt="aventura"><p>Aventura</p></div>' +   
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-06.png" alt="Ciencia ficción"><p>C. Ficción</p></div>' +  
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-11.png" alt="Comedia"><p>Comedia</p></div>' +     
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-10.png" alt="Drama"><p>Drama</p></div>' + 
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-12.png" alt="Erotico"><p>Erótico</p></div>' +   
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-02.png" alt="Fantasía"><p>Fantasía</p></div>' +      
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-07.png" alt="Musical"><p>Musical</p></div>' + 
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-08.png" alt="Romantica"><p>Romantica</p></div>' +   
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-05.png" alt="Suspenso"><p>Suspenso</p></div>' +      
-    '<div class="genders col-xs-3"><img src="../assets/icons/icons-04.png" alt="Terror"><p>Terror</p></div>' + 
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-03.png" alt="accion"><p>Acción</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-01.png" alt="animado"><p>Animado</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-09.png" alt="aventura"><p>Aventura</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-06.png" alt="Ciencia ficción"><p>C. Ficción</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-11.png" alt="Comedia"><p>Comedia</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-10.png" alt="Drama"><p>Drama</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-12.png" alt="Erotico"><p>Erótico</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-02.png" alt="Fantasía"><p>Fantasía</p></div>' +
+    '<div class="genders col-xs-3"><img  src="../assets/icons/icons-07.png" alt="Musical"><p>Musical</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-08.png" alt="Romantica"><p>Romantica</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-05.png" alt="Suspenso"><p>Suspenso</p></div>' +
+    '<div class="genders col-xs-3"><img src="../assets/icons/icons-04.png" alt="Terror"><p>Terror</p></div>' +
   '</div>' +
   '</div>';
+
   //selecciona el contenedor para los cuadros
   var chooseGender = $('#choose-gender');
 // el evento
@@ -50,12 +52,11 @@ $(document).ready(function() {
       break;
     };
   });
-  
 // melissa y yenny
   /*Arreglos con Preferencias existentes en la API*/
   var musical= ['Cannibal! The Musical','Lovestruck: The Musical','College Musical','Cats'];
   var fantasy = ['Lovestruck: The Musical', 'Shrek the Musical']
-  var ficcion = ['alien', 'batman', 'lego','mascara','Cannibal! The Musical'];  
+  var ficcion = ['alien', 'batman', 'lego','mascara','Cannibal! The Musical'];
   var accion = ['Star Wars', 'Wonder Woman', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Pirates of the Caribbean', 'Shaolin Soccer', 'Airbag'];
   var animada = ['Up', 'Moana'];
   var aventura = ['Star Wars', 'Up','Moana','Pirates of the Caribbean', 'Back to the Future', 'Wonder Woman'];
@@ -73,68 +74,71 @@ $(document).ready(function() {
   /* eventos para cada tipo de genero de la pelicula*/
   var total=[];
   var flag = 0;
-  
-  $('#musical').click(function(){	
+
+  $('#musical').on('click', function(){
+    alert('mel')
     flag = 1;
     alert(flag);
     total=$.merge(total,musical);
     alert(total);
   })
-  
+
+
+
   $('#fantasy').click(function(){
      flag = 2;
      alert(flag);
      total=$.merge(total,fantasy);
      alert(total);
   })
-  
+
   $('#ficcion').click(function(){
     flag = 3 ;
     total=$.merge(total,ficcion);
-    alert(total);  
+    alert(total);
     })
-  
+
   $('#accion').click(function(){
     flag = 4 ;
     total=$.merge(total,accion);
-    alert(total);  
+    alert(total);
   })
-  
+
   $('#animada').click(function(){
     flag = 5 ;
     total=$.merge(total,accion);
-    alert(total);  
+    alert(total);
   })
-  
+
   $('#aventura').click(function(){
     flag = 6 ;
     total=$.merge(total,aventura);
-    alert(total);  
+    alert(total);
   })
-  
+
 
   /* funcion para llamar el api*/
-  function apiCall(){
-    var movie = Math.floor((Math.random() * array1.length-1) + 1);
+  function apiCall() {
+    var movie = Math.floor((Math.random() * array1.length - 1) + 1);
     console.log(movie);
-    var randomMovie =  array1[movie];
-    console.log(randomMovie)
-    $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + randomMovie).then(function(response){
-      /*obteniendo el objeto*/
-      console.log(response)
-      /*var typeMovie = response.Genre;
+    var randomMovie = array1[movie];
+    console.log(randomMovie);
+    $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + randomMovie).then(function(response) {
+      /* obteniendo el objeto*/
+      console.log(response);
+      /* var typeMovie = response.Genre;
       console.log(typeMovie);
       $('.genere').append(typeMovie);*/
       var image = response.Poster;
-      console.log(image)
-      /*$('#cont').append('<div >' +image + ' </div>');*/
-      /*$('#cont img').append('image')*/
-      if(image!=="N/A"){
+      console.log(image);
+      /* $('#cont').append('<div >' +image + ' </div>');*/
+      /* $('#cont img').append('image')*/
+      if (image !== 'N/A') {
         $('#imagen').attr('src', image);
       }
-    })
+    });
   }
-  $('#boton').click(function(){
+  $('#boton').click(function() {
     apiCall();
   })
 });
