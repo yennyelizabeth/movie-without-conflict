@@ -195,11 +195,8 @@ $(document).ready(function() {
 
   /* funcion para llamar el api*/
   function apiCall() {
-<<<<<<< HEAD
-    $('#information').html('')
-=======
+
     $('#information').html('');
->>>>>>> 95060763a9a3db7a873a56517a9e4cb7f18642ac
     /* si el array no tiene coinciencias, el resultado es todas las peliculas de los géneros seleccionados*/
     if (myArrClean.length === 0) {
       var movie = Math.floor((Math.random() * total.length - 1) + 1);
