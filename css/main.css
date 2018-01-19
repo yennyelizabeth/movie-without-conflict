@@ -76,6 +76,10 @@ h1{
 
 /*estilos a alone*/
 
+.gender-alone{
+	border: 2px solid #c51f48;
+}
+
 .smile{
 	height: 1em;
 }
@@ -103,6 +107,7 @@ h1{
 
 .help h1{
 	font-size: 3em;
+	color: #c51f48;
 }
 
 /*media querys*/
