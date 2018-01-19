@@ -103,13 +103,11 @@ $(document).ready(function() {
     alert(total);
   });
 
-  $('.accion').click(function() {
 
+  $('.accion').click(function() {
     flag = 4 ;
     total = $.merge(total, accion);
-
     alert(total);
-
   });
 
   $('.animada').click(function() {
@@ -119,7 +117,6 @@ $(document).ready(function() {
   });
 
   $('.aventura').click(function() {
-
     flag = 6 ;
     total = $.merge(total, aventura);
     alert(total);
@@ -131,9 +128,7 @@ $(document).ready(function() {
     alert(total);
   });
 
-
   $('.comedia').click(function() {
-
     flag = 8 ;
     total = $.merge(total, comedia);
     alert(total);
@@ -169,10 +164,27 @@ $(document).ready(function() {
     alert(total);
   });
 
-  $('#match').click(function() {
-alert( total);
-  });
+  var temp=[];
+  var coincidencia=[];
+  var poscoincencia =[];
+	var pos = 0;
 
+	$('#match').click(function(){	
+    alert(total);
+	  flag = 15;	
+    for( var i = 0; i<total.length ; i++){
+      temp[i] = total[i];
+      for(var j = i+1 ; j<total.length-1 ; j++) {
+        if (temp[i] === total[j]) {
+          pos = pos+1;
+          coincidencia[i] = temp[i] ;
+          //poscoincencia[i] = poscoincencia[pos]+1 ;
+        }
+      }			
+	  }
+    var myArrClean = coincidencia.filter(Boolean); 
+    alert(myArrClean);
+	})
 
 
   /* funcion para llamar el api*/
