@@ -1,1 +1,16 @@
+.romantica {
+  color: yellow important!;
+}
 
+.hide{
+  display: none;
+}
+
+.img-random{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 40vw;
+  height: 70vh;
+  border-radius: 10px;
+  border: 3px solid rgba(197,31,72,1);
+}
