@@ -1,7 +1,7 @@
 HACKATON: "Movies"
 ==================
 ## SQUAD:
-
+(assets/images/readme/squad.png)
 
 ## INTEGRANTES:  
 - Encarnación Gomez, Andrea - andrea_206_93@hotmail.com
@@ -44,14 +44,25 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
 ## VERSIONES
 - Vs-MWC-01 Actual versión.
 
+
 ## ANEXOS
 - Modelo Cuestionario de Entrevista Online
   ![Preguntas](assets/images/readme/grupo-question-1.png)
   ![Respuestas](assets/images/readme/grupo-respuestas-1.png)
+  ![Conclusiones](assets/images/readme/conc-enc.png)
+  ![Conclusiones](assets/images/readme/conc-enc1.png)
 
 
 
-## PROTOTIPOS
+## PROCESO IMPLEMENTACIÓN
+
+### PLANNING
+  ![Planning](assets/images/readme/planning.png)
+  ![Requerimientos y Roles](assets/images/readme/req-rol.png)
+  ![Rol y Actividad](assets/images/readme/rol-act.png)
+
+### UX
+
 ### SKETCH
 #### Sketch de Valeria
  ![Valeria](assets/images/PROTOTIPOS/Sketch-Valeria.png)
