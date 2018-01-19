@@ -66,111 +66,146 @@ $(document).ready(function() {
   /* Arreglos con Preferencias existentes en la API*/
   var musical = ['Cannibal! The Musical', 'Lovestruck: The Musical', 'College Musical', 'Cats'];
   var fantasy = ['Lovestruck: The Musical', 'Shrek the Musical'];
-  var ficcion = ['alien', 'batman', 'lego', 'mascara', 'Cannibal! The Musical'];  
   var accion = ['Star Wars', 'Wonder Woman', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Pirates of the Caribbean', 'Shaolin Soccer', 'Airbag'];
   var animada = ['Up', 'Moana'];
   var aventura = ['Star Wars', 'Up', 'Moana', 'Pirates of the Caribbean', 'Back to the Future', 'Wonder Woman'];
   var cienciaficcion = ['The Adjustment Bureau', 'Back to the Future'];
   var comedia = ['Up', 'Moana', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Shaolin Soccer', 'Airbag', 'Back to the Future'];
   var drama = ['Night and Day'];
-  var erotico = [];
+  var erotico = ['Fifty Shades Darker'];
   var romantica = ['Possession ', ' Date Movie, Love Actually', 'Sun, Sand & Romance', 'Modern Romance'];
   var suspenso = ['The Sixth Sense ', ' Vertigo', 'Psycho', 'Hitchcock', 'Memento'];
   var terror = ['Raising Cain', ' American Nightmare', 'The grudge', 'Grave Halloween', 'The others'];
 
-  /**/
-  var array1 = [];
-
   /* eventos para cada tipo de genero de la pelicula*/
+  /* array segun los generos de peliculas*/
   var total = [];
-  var flag = 0;
-
-  
-  $('#musical').click(function() {	
-
-    flag = 1;
-    alert(flag);
+  /* var flag = 0;*/
+  /* evento para los datos del genero  musical*/
+  $('.musical').click(function() {
+    /* flag = 1;*/
+    /* incorpora los elementos de la data musical*/
     total = $.merge(total, musical);
-    alert(total);
-
+    console.log(total);
   });
-  
-  $('#fantasy').click(function() {
-    flag = 2;
-    alert(flag);
+  /* evento para los datos del género fantasia*/
+  $('.fantasy').click(function() {
+    /* flag = 2;*/
+    /* incorpora los elementos de la data fantasy*/
     total = $.merge(total, fantasy);
-    alert(total);
+    console.log(total);
   });
-  
-  $('#ficcion').click(function() {
-    flag = 3 ;
-    total = $.merge(total, ficcion);  
+  /* evento para los datos del género ciencia ficción */
+  $('.ficcion').click(function() {
+    /* flag = 3 ;*/
+    /* incorpora los elementos de la data ciencia ficcion*/
+    total = $.merge(total, cienciaficcion);
+    console.log(total);
   });
-  
-  $('#accion').click(function() {
-    flag = 4 ;
-    total = $.merge(total, accion); 
+  /* evento para los datos del género acción */
+  $('.accion').click(function() {
+    /* flag = 4 ;*/
+    /* incorpora los elementos de la data accion*/
+    total = $.merge(total, accion);
+    console.log(total);
   });
-  
-  $('#animada').click(function() {
-    flag = 5 ;
-    total = $.merge(total, accion);  
+  /* evento para los datos del género animados*/
+  $('.animada').click(function() {
+  /*  flag = 5 ;*/
+    /* incorpora los elementos de la data accion*/
+    total = $.merge(total, animada);
+    console.log(total);
   });
-  
-  $('#aventura').click(function() {
+  /* evento para los datos del género aventura*/
+  $('.aventura').click(function() {
+  /*  flag = 6 ;*/
+    total = $.merge(total, aventura);
+    console.log(total);
+  });
 
-    flag = 6 ;
-    total = $.merge(total, aventura); 
-  });
-
-  $('#cienciaficcion').click(function() {
+  $('.cienciaficcion').click(function() {
     flag = 7 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, cienciaficcion);
+    console.log(total);
   });
-  
-  $('#comedia').click(function() {
+
+  $('.comedia').click(function() {
     flag = 8 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, comedia);
+    console.log(total);
   });
- 
-  $('#drama').click(function() {
+
+  $('.drama').click(function() {
     flag = 9 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, drama);
+    console.log(total);
   });
 
-  $('#erotico').click(function() {
+  $('.erotico').click(function() {
     flag = 10 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, erotico);
+    console.log(total);
   });
 
-  $('#romantica').click(function() {
+  $('.romantica').click(function() {
     flag = 11 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, romantica);
+    console.log(total);
   });
 
-  $('#suspenso').click(function() {
+  $('.suspenso').click(function() {
     flag = 12 ;
-    total = $.merge(total, aventura);
+    total = $.merge(total, suspenso);
+    console.log(total);
   });
 
-  $('#suspenso').click(function() {
-    flag = 13 ;
-    total = $.merge(total, aventura);
-  });
-  
-  $('#terror').click(function() {
+  $('.terror').click(function() {
     flag = 14 ;
     total = $.merge(total, aventura);
+    console.log(total);
   });
 
+  var temp = [];
+  var coincidencia = [];
+  var poscoincencia = [];
+	 var pos = 0;
+  var myArrClean = [];
+  /* evento para el btn quiero ver mis pelis*/
+  $('#match').click(function() {
+    console.log(total);
+	  flag = 15;
+    /* recorrido en el array de los géneros de peliculas seleccionados,suma */
+    for (var i = 0; i < total.length ; i++) {
+      temp[i] = total[i];
+      /* comparación con el siguiente elemento del array*/
+      for (var j = i + 1 ; j < total.length; j++) {
+        /* si son iguales se guarda en coincidencia*/
+        if (temp[i] === total[j]) {
+          /* pos = pos + 1;*/
+          coincidencia[i] = temp[i] ;
+          // poscoincencia[i] = poscoincencia[pos]+1 ;
+        }
+      }
+    }
+    // elimina del array los vacios o ceros y se guarda en myArrClean
+    myArrClean = coincidencia.filter(Boolean);
+    alert(coincidencia);
+  });
 
 
   /* funcion para llamar el api*/
   function apiCall() {
-    var movie = Math.floor((Math.random() * array1.length - 1) + 1);
-    console.log(movie);
-    var randomMovie = array1[movie];
-    console.log(randomMovie);
+    /* si el array no tiene coinciencias, el resultado es todas las peliculas de los géneros seleccionados*/
+    if (myArrClean.length === 0) {
+      var movie = Math.floor((Math.random() * total.length - 1) + 1);
+      console.log(movie);
+      var randomMovie = total[movie];
+    } else {
+      var movie = Math.floor((Math.random() * myArrClean.length - 1) + 1);
+      console.log(movie);
+      var randomMovie = myArrClean[movie];
+      console.log(randomMovie);
+    }
     $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + randomMovie).then(function(response) {
       /* obteniendo el objeto*/
       console.log(response);
@@ -186,7 +221,8 @@ $(document).ready(function() {
       }
     });
   }
-  $('#boton').click(function() {
+  $('#match').click(function() {
     apiCall();
+    $('#imagen').removeClass('hide');
   });
 });
