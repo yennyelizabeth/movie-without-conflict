@@ -6,7 +6,9 @@ $(document).ready(function() {
   $('#select-4').hide();
   $('#select-5').hide();
   $('.btn-1').hide();
+
   // selecciona el contenedor para los cuadros
+
   var chooseGender = $('#choose-gender');
   // el evento
   $('#person-number').change(function() {
@@ -60,7 +62,6 @@ $(document).ready(function() {
       break;
     };
   });
-  
   // melissa y yenny
   /* Arreglos con Preferencias existentes en la API*/
   var musical = ['Cannibal! The Musical', 'Lovestruck: The Musical', 'College Musical', 'Cats'];
@@ -83,12 +84,15 @@ $(document).ready(function() {
   /* eventos para cada tipo de genero de la pelicula*/
   var total = [];
   var flag = 0;
+
   
   $('#musical').click(function() {	
+
     flag = 1;
     alert(flag);
     total = $.merge(total, musical);
     alert(total);
+
   });
   
   $('#fantasy').click(function() {
@@ -114,6 +118,7 @@ $(document).ready(function() {
   });
   
   $('#aventura').click(function() {
+
     flag = 6 ;
     total = $.merge(total, aventura); 
   });
@@ -142,7 +147,7 @@ $(document).ready(function() {
     flag = 11 ;
     total = $.merge(total, aventura);
   });
-  
+
   $('#suspenso').click(function() {
     flag = 12 ;
     total = $.merge(total, aventura);
@@ -157,6 +162,7 @@ $(document).ready(function() {
     flag = 14 ;
     total = $.merge(total, aventura);
   });
+
 
 
   /* funcion para llamar el api*/
