@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $('#searchForm').on('click',function(){
 		var searchText = $('#searchText').val();
 		getMovies(searchText);
@@ -20,18 +21,19 @@ $(document).ready(function() {
 				  <div class="well text-center center-block">
 					<img class="img-responsive center-block" src="${movie.Poster}">
 					<h5 class="color-h5">${movie.Title}</h5>
+
 					<a onclick="movieSelected('${movie.id}')" class= "btn btn-coincidencia" href="#">Movie Details</a>
 					</div>
 				</div>
 				`;
 
-				//movie.poster_path
+          // movie.poster_path
 			  $('#movies').html(output);	
 			  console.log('#movies');
-				});
-			})
-			.catch((err) => {
-				console.log(err);
-			})	
-	}
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });	
+  }
 });

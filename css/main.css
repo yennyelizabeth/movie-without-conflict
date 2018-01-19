@@ -130,10 +130,11 @@ h1{
 .margen-search {
 	margin-top: 10%;
 }
-.color-h5 {
-	color: black;
-}
 .btn-coincidencia {
 	background: #c51f48;
 	color: #fff;
+}
+
+.color-h5 {
+	color: black;
 }
