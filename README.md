@@ -13,7 +13,7 @@ HACKATON: "Movies"
 - Problema o Requerimiento: Ausencia de un Aplicativo que guíe la elección de películas a ver
 para una persona que quiere ver sola(o) ó acompañada(o).
 
-![Inicio](assets/images/readme/problema.png)
+![Inicio](assets/images/readme/squad.png)
 
 ## SOLUCIÓN : Movie Whithout Conflict
 
