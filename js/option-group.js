@@ -73,7 +73,7 @@ $(document).ready(function() {
   var cienciaficcion = ['The Adjustment Bureau', 'Back to the Future'];
   var comedia = ['Up', 'Moana', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Shaolin Soccer', 'Airbag', 'Back to the Future'];
   var drama = ['Night and Day'];
-  var erotico = [];
+  var erotico = ['Fifty Shades Darker'];
   var romantica = ['Possession ', ' Date Movie, Love Actually', 'Sun, Sand & Romance', 'Modern Romance'];
   var suspenso = ['The Sixth Sense ', ' Vertigo', 'Psycho', 'Hitchcock', 'Memento'];
   var terror = ['Raising Cain', ' American Nightmare', 'The grudge', 'Grave Halloween', 'The others'];
@@ -85,62 +85,70 @@ $(document).ready(function() {
   var total = [];
   var flag = 0;
 
-  $('.musical').click(function() {	
+  $('.musical').click(function() {
     flag = 1;
     total = $.merge(total, musical);
+    alert(total);
     });
-  
+
   $('.fantasy').click(function() {
 
     flag = 2;
     total = $.merge(total, fantasy);
+    alert(total);
   });
   $('.ficcion').click(function() {
     flag = 3 ;
     total = $.merge(total, ficcion);
+    alert(total);
   });
-  
+
   $('.accion').click(function() {
 
     flag = 4 ;
     total = $.merge(total, accion);
 
-    alert(total); 
+    alert(total);
 
   });
 
   $('.animada').click(function() {
     flag = 5 ;
-    total = $.merge(total, animada);  
+    total = $.merge(total, animada);
     alert(total);
   });
-  
+
   $('.aventura').click(function() {
 
     flag = 6 ;
     total = $.merge(total, aventura);
+    alert(total);
   });
 
   $('.cienciaficcion').click(function() {
     flag = 7 ;
     total = $.merge(total, cienciaficcion);
+    alert(total);
   });
 
-  
+
   $('.comedia').click(function() {
 
     flag = 8 ;
     total = $.merge(total, comedia);
+    alert(total);
   });
-  
+
   $('.drama').click(function() {
     flag = 9 ;
     total = $.merge(total, drama);
+    alert(total);
   });
 
   $('.erotico').click(function() {
     flag = 10 ;
     total = $.merge(total, erotico);
+    alert(total);
   });
 
   $('.romantica').click(function() {
@@ -152,11 +160,13 @@ $(document).ready(function() {
   $('.suspenso').click(function() {
     flag = 12 ;
     total = $.merge(total, suspenso);
+    alert(total);
   });
 
   $('.terror').click(function() {
     flag = 14 ;
     total = $.merge(total, aventura);
+    alert(total);
   });
 
   $('#match').click(function() {
@@ -186,7 +196,7 @@ alert( total);
       }
     });
   }
-  $('#boton').click(function() {
+  $('#match').click(function() {
     apiCall();
     $('#imagen').removeClass('hide');
   });
