@@ -88,13 +88,11 @@ $(document).ready(function() {
   
   $('.musical').click(function() {	
     flag = 1;
-    alert(flag);
     total = $.merge(total, musical);
     });
   
   $('.fantasy').click(function() {
     flag = 2;
-    alert(flag);
     total = $.merge(total, fantasy);
   });
   
@@ -105,12 +103,14 @@ $(document).ready(function() {
   
   $('.accion').click(function() {
     flag = 4 ;
-    total = $.merge(total, accion); 
+    total = $.merge(total, accion);
+    alert(total); 
   });
   
   $('.animada').click(function() {
     flag = 5 ;
     total = $.merge(total, animada);  
+    alert(total);
   });
   
   $('.aventura').click(function() {
@@ -141,6 +141,7 @@ $(document).ready(function() {
   $('.romantica').click(function() {
     flag = 11 ;
     total = $.merge(total, romantica);
+    alert(total);
   });
 
   $('.suspenso').click(function() {
