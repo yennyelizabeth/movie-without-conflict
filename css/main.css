@@ -70,7 +70,19 @@ h1{
 	margin-top: 20px;
 }
 
+#choose-gender{
+	margin-top: 2%;
+}
+
+.btn-pelis{
+	margin-bottom: 20px;
+}
+
 /*estilos a alone*/
+
+.gender-alone{
+	border: 2px solid #c51f48;
+}
 
 .smile{
 	height: 1em;
@@ -78,6 +90,10 @@ h1{
 
 .select-gender{
 	border: 2px solid #c51f48;
+	overflow: hidden;
+	width: 80%;
+	margin: 1.5%;
+	display: inline-block;
 }
 
 .input-name{
@@ -95,12 +111,20 @@ h1{
 
 .help h1{
 	font-size: 3em;
+	color: #c51f48;
 }
 
 /*media querys*/
 @media(min-width: 768px){
 	.movie-group h1{
 		font-size: 3em;
+	}
+	.select-gender{
+		border: 2px solid #c51f48;
+		overflow: hidden;
+		width: 32%;
+		margin: 0.5%;
+		display: inline-block;
 	}
 }
 .margen-search {
