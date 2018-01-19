@@ -2,8 +2,8 @@ $(document).ready(function() {
     $('#searchForm').on('click',function(){
 		var searchText = $('#searchText').val();
 		getMovies(searchText);
-        e.preventDefault();
-        console.log(searchText);
+        preventDefault();
+      
     });
     
 	function getMovies(searchText){
@@ -11,15 +11,15 @@ $(document).ready(function() {
 		axios.get('http://www.omdbapi.com/?apikey=3a181f1c&s=' + searchText)
 			.then((response) =>{
 				console.log(response);
+				$('#searchText').val();
 				var movies = response.data.Search;
 				var output = '';
 				$.each(movies, (index, movie) => {
 				output += `
-				<div class="col-md-3">
-				  <div class="well text-center">
-					<img class="img-responsive" src="${movie.Poster}">
-					<h5>${movie.Title}</h5>
-					<p>${movie.Genre}</p>
+				<div class="col-sm-6 col-md-3">
+				  <div class="well text-center center-block">
+					<img class="img-responsive center-block" src="${movie.Poster}">
+					<h5 class="color-h5">${movie.Title}</h5>
 					<a onclick="movieSelected('${movie.id}')" class= "btn btn-primary" href="#">Movie Details</a>
 					</div>
 				</div>
