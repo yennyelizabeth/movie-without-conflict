@@ -20,7 +20,7 @@ $(document).ready(function() {
 				  <div class="well text-center center-block">
 					<img class="img-responsive center-block" src="${movie.Poster}">
 					<h5 class="color-h5">${movie.Title}</h5>
-					<a onclick="movieSelected('${movie.id}')" class= "btn btn-primary" href="#">Movie Details</a>
+					<a onclick="movieSelected('${movie.id}')" class= "btn btn-coincidencia" href="#">Movie Details</a>
 					</div>
 				</div>
 				`;
