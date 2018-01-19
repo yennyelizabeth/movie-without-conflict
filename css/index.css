@@ -1,42 +1,44 @@
+p{
+  font-size: 3em;
+}
+/*estilos al carrousel*/
+ .couple{
+  background-image: url(../assets/images/MEANS-01.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.friends{
+  background-image: url(../assets/images/MEANS-02.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alone{
+  background-image: url(../assets/images/MEANS-03.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.best-friend{
+  background-image: url(../assets/images/MEANS-04.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.family{
+  background-image: url(../assets/images/MEANS-05.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-/* para vista mobile */
+.logo-index{
+  margin-bottom: 2em;
+}
 
-@media (max-width:300px){
-  /* section-option */  
-
-  img{
-    margin-top: 200px important! ;
+@media(min-width: 768px){
+  p{
+    font-size: 4em;
   }
-
-
-  .view-desktop{
-    display: none;
-  }
-
-  .letter-mobile {
-    font-size: 1em;
-    
-  }
-
-  }
-
-/* para vista desktop */
-@media (min-width:991px){
-  /* section-option */  
-
-  .view-desktop{
-    padding-left: 178px;
-  }
-
-  .view-mobile{
-    display: none;
-  }
-
-  .letter-desktop {
-    font-size: 3em;
-  }
-  
- }
- .margen-search {
-
- }
+}
