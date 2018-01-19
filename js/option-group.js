@@ -169,7 +169,8 @@ $(document).ready(function() {
           //poscoincencia[i] = poscoincencia[pos]+1 ;
         }
       }			
-	  }
+    }
+    // probando
     var myArrClean = coincidencia.filter(Boolean); 
     alert(myArrClean);
 	})
