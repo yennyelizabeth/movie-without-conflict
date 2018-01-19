@@ -66,7 +66,7 @@ $(document).ready(function() {
   /* Arreglos con Preferencias existentes en la API*/
   var musical = ['Cannibal! The Musical', 'Lovestruck: The Musical', 'College Musical', 'Cats'];
   var fantasy = ['Lovestruck: The Musical', 'Shrek the Musical'];
-  var ficcion = ['alien', 'batman', 'lego', 'mascara', 'Cannibal! The Musical'];  
+  var ficcion = ['alien', 'batman', 'lego', 'mascara', 'Cannibal! The Musical'];
   var accion = ['Star Wars', 'Wonder Woman', 'Scott Pilgrim vs. the World', 'Tropic Thunder', 'Pirates of the Caribbean', 'Shaolin Soccer', 'Airbag'];
   var animada = ['Up', 'Moana'];
   var aventura = ['Star Wars', 'Up', 'Moana', 'Pirates of the Caribbean', 'Back to the Future', 'Wonder Woman'];
@@ -85,7 +85,6 @@ $(document).ready(function() {
   var total = [];
   var flag = 0;
 
-  
   $('.musical').click(function() {	
     flag = 1;
     alert(flag);
@@ -93,41 +92,45 @@ $(document).ready(function() {
     });
   
   $('.fantasy').click(function() {
+
     flag = 2;
     alert(flag);
     total = $.merge(total, fantasy);
   });
-  
   $('.ficcion').click(function() {
     flag = 3 ;
-    total = $.merge(total, ficcion);  
+    total = $.merge(total, ficcion);
   });
   
   $('.accion').click(function() {
+
     flag = 4 ;
-    total = $.merge(total, accion); 
+    total = $.merge(total, accion);
   });
-  
+
   $('.animada').click(function() {
     flag = 5 ;
     total = $.merge(total, animada);  
   });
   
   $('.aventura').click(function() {
+
     flag = 6 ;
-    total = $.merge(total, aventura); 
+    total = $.merge(total, aventura);
   });
 
   $('.cienciaficcion').click(function() {
     flag = 7 ;
     total = $.merge(total, cienciaficcion);
   });
+
   
   $('.comedia').click(function() {
+
     flag = 8 ;
     total = $.merge(total, comedia);
   });
- 
+  
   $('.drama').click(function() {
     flag = 9 ;
     total = $.merge(total, drama);
@@ -161,9 +164,9 @@ alert( total);
 
   /* funcion para llamar el api*/
   function apiCall() {
-    var movie = Math.floor((Math.random() * array1.length - 1) + 1);
+    var movie = Math.floor((Math.random() * total.length - 1) + 1);
     console.log(movie);
-    var randomMovie = array1[movie];
+    var randomMovie = total[movie];
     console.log(randomMovie);
     $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + randomMovie).then(function(response) {
       /* obteniendo el objeto*/
@@ -182,5 +185,6 @@ alert( total);
   }
   $('#boton').click(function() {
     apiCall();
+    $('#imagen').removeClass('hide');
   });
 });
