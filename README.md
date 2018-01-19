@@ -63,3 +63,5 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
  ![Andrea](assets/images/PROTOTIPOS/prototipo-final-desktop.png)
 
  ![Andrea](assets/images/PROTOTIPOS/prototipo-final-mobile.png)
+
+ hola
