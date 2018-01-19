@@ -126,9 +126,10 @@ $(document).ready(function() {
     total=$.merge(total,aventura);
   })
 
-  $('#romantica').click(function(){
+  $('.romantica').click(function(){
     flag = 11 ;
     total=$.merge(total,aventura);
+    alert('romantica');
   })
   
   $('#suspenso').click(function(){
