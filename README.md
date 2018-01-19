@@ -1,7 +1,7 @@
 HACKATON: "Movies"
 ==================
 ## SQUAD:
-(assets/images/readme/squad.png)
+![Inicio](assets/images/readme/squad.png)
 
 ## INTEGRANTES:  
 - Encarnación Gomez, Andrea - andrea_206_93@hotmail.com
@@ -13,12 +13,12 @@ HACKATON: "Movies"
 - Problema o Requerimiento: Ausencia de un Aplicativo que guíe la elección de películas a ver
 para una persona que quiere ver sola(o) ó acompañada(o).
 
-![Inicio](assets/images/readme/squad.png)
+
 
 ## SOLUCIÓN : Movie Whithout Conflict
 
 ### LOGO
-![Markdown Here logo](assets/images/MEANS-06.png)
+![Markdown Here logo](assets/images/readme/logo.png)
 
 ### FAST VIEW
 ![Inicio](assets/images/fast-view.PNG)
