@@ -195,7 +195,11 @@ $(document).ready(function() {
 
   /* funcion para llamar el api*/
   function apiCall() {
+<<<<<<< HEAD
+    $('#information').html('')
+=======
     $('#information').html('');
+>>>>>>> 95060763a9a3db7a873a56517a9e4cb7f18642ac
     /* si el array no tiene coinciencias, el resultado es todas las peliculas de los géneros seleccionados*/
     if (myArrClean.length === 0) {
       var movie = Math.floor((Math.random() * total.length - 1) + 1);
@@ -210,6 +214,7 @@ $(document).ready(function() {
     $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + randomMovie).then(function(response) {
       /* obteniendo el objeto*/
       console.log(response);
+
       var title = response.Title;
       var actors = response.Actors;
       var typeMovie = response.Genre;
@@ -235,6 +240,7 @@ $(document).ready(function() {
     $('#imagen').removeClass('hide');
     $('#btn-modal').removeClass('hide');
   });
+
 
   /* validando los inputs para que no ingrese numero*/
   $('#first-person, #second-person').keyup(function() {
