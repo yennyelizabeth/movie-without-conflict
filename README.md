@@ -18,10 +18,10 @@ para una persona que quiere ver sola(o) ó acompañada(o).
 ## SOLUCIÓN : Movie Whithout Conflict
 
 ### LOGO
-![Markdown Here logo](assets/images/...)
+![Markdown Here logo](assets/images/MEANS-06.png)
 
 ### FAST VIEW
-![Inicio](assets/images/readme/...)
+![Inicio](assets/images/fast-view.PNG)
 
 ## BREVE EXPLICACION:
 - Movie Without Conflict , es una aplicación web , con accesibilidad vía web y mobile, tiene como finalidad
@@ -31,10 +31,12 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
 ### GLOBAL VIEW
 ----------------------
 #### INICIO Y PRESENTACIÓN
-![Inicio](assets/images/readme/...)
+![Inicio](assets/images/inicio.PNG)
 
 #### FLUJO VER PELÍCULA SÓLO
-![Inicio](assets/images/readme/...)
+![Inicio](assets/images/solito.PNG)
+
+![Inicio](assets/images/solito2.PNG)
 
 #### FLUJO VER PELÍCULA EN GRUPO
 ![Inicio](assets/images/readme/...)
@@ -47,16 +49,17 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
   ![Preguntas](assets/images/readme/grupo-question-1.png)
   ![Respuestas](assets/images/readme/grupo-respuestas-1.png)
 
-Andrea encarnacion
+
 
 ## PROTOTIPOS
 ### SKETCH
 #### Sketch de Valeria
- ![Valeria](assets/images/readme/PROTOTIPOS/Sketch-Valeria.png)
+ ![Valeria](assets/images/PROTOTIPOS/Sketch-Valeria.png)
 #### Sketch de Yenny
- ![Yenny](assets/images/readme/PROTOTIPOS/Sketch-Yenny.png)
+ ![Yenny](assets/images/PROTOTIPOS/Sketch-Yenny.png)
 #### Sketch de Melissa
- ![Melissa](assets/images/readme/PROTOTIPOS/Sketch-Melissa.png)
+ ![Melissa](assets/images/PROTOTIPOS/Sketch-Melissa.png)
 #### Sketch de Andrea : Prototipo Final
- ![Andrea](assets/images/readme/PROTOTIPOS/prototipo-final-desktop.png)
- ![Andrea](assets/images/readme/PROTOTIPOS/prototipo-final-mobile.png)
+ ![Andrea](assets/images/PROTOTIPOS/prototipo-final-desktop.png)
+
+ ![Andrea](assets/images/PROTOTIPOS/prototipo-final-mobile.png)
