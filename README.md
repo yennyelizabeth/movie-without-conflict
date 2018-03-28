@@ -3,9 +3,7 @@
 Movie Without Conflict es una aplicación web , con accesibilidad vía web y mobile, tiene como finalidad
 facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
 
-![logo-hackaton-movie-with-out-conflict](https://user-images.githubusercontent.com/31896385/38055878-86791934-32a0-11e8-9ef2-bba7b2e8bb10.png)
-
-
+![logo-hackaton-movie-with-out-conflict](https://user-images.githubusercontent.com/31896385/38056051-f424582c-32a0-11e8-9043-89d02b30f237.png)
 
 ## Proyecto desarrollado en [Laboratoria](http://laboratoria.la) 
 
