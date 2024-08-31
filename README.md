@@ -17,7 +17,7 @@ HACKATON: "Movies"
 
 ## INTEGRANTES:  
 - Encarnación Gomez, Andrea - andrea_206_93@hotmail.com
-- Quiñones Jauregui, Yenny Elizabeth - yenny.quinones.jauregui@gmail.com
+- Yenny Elizabeth - 
 - Valles , Valeria - sindryv@gmail.com
 - Yauri Machaca , Melissa Rossmery - yaurimelissa@gmail.com
 
